@@ -8,11 +8,17 @@ public class Question
 {
     private int mTextResID;
     private boolean mAnswerTrue;
+    private boolean mQuestionTaken;
+    private boolean mAnswerGuessed;
+    private boolean mCheated;
 
     public Question(int textResID, boolean answerTrue)
     {
         mTextResID = textResID;
         mAnswerTrue = answerTrue;
+        mQuestionTaken = false;
+        mAnswerGuessed = false;
+        mCheated = false;
     }
 
     //
